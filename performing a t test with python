@@ -4,7 +4,7 @@
 #better said: whether or not the coder coded as a child does not improve income as an adult
 
 #load in the data
-coders=pd.read_feather("C:/Users/logmein/Desktop/stack_overflow.feather")
+coders=pd.read_feather("stack_overflow.feather")
 
 #separate age_first_code_cut into adult and child and get the mean
 coders.groupby('age_first_code_cut')['converted_comp'].mean()
