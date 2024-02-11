@@ -1,0 +1,26 @@
+perform a t test on stack overflow data 
+the stack overflow data contain information on software developers the age when the developer first started coding (age_first_code_cut) and compensation as an adult (converted_comp)
+H0 is that the age when the developer first started coding (age_first_code_cut) has no significance on compensation as an adult (converted_comp) 
+better said: whether or not the coder coded as a child does not improve income as an adult
+
+load in the data
+
+separate age_first_code_cut into adult and child and get the mean
+continue with ttest on this data assuming the means are equal and not significant
+get the means of the child coding and adult coding group
+
+get the standard deviation of the child coding and adult coding group
+
+get counts of the numbers of each group
+
+calculate the t_stat
+
+because we are using a t test with a t distribution because we have multiple sample stats mean child and mean adult
+
+perform a t-test to determine if the mean difference salary is significant for child coders vs adult coders with significance of 0.1
+since we already have the tvalue or t_stat, we just need the degrees of freedom
+calculate the degrees of freedom
+
+import t from scipy.stats so we can perform the cdf for t distribution
+
+perform the t.cdf with right tailed test (1 - t.cdf) bc we are seeing if mean_child_income is GREATER than mean_adult_income
